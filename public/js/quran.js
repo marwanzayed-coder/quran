@@ -59,7 +59,7 @@ function SoraFile(params) {
   fetch("../quran.json")
     .then((res) => res.json())
     .then((rep) => {
-      let num = location.href.slice(28) || location.href.slice(37);
+      let num = location.href.slice(37);
       let name = document.createElement("h1");
       name.className = "text-center mt-5 p-3";
       let NameText = document.createTextNode(rep[num - 1].name);
