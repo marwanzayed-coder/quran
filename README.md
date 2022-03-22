@@ -4,11 +4,11 @@
 
 ## Preview
 
-Preview NOUR from [Here](https://quranweb.herokuapp.com/).
+Preview Quran from [Here](https://quranweb.herokuapp.com/).
 
 ## Installation
 
-NOUR requires [Node.js](https://nodejs.org/en/) to run.
+Quran requires [Node.js](https://nodejs.org/en/) to run.
 
 Install the dependencies using *Node.js*.
 
