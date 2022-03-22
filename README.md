@@ -1,6 +1,6 @@
 # Quran Karem
 
-[![Open in Visual Studio Code]](https://vscode.dev/github/marwanzayed-coder/quran)
+[Open in Visual Studio Code](https://vscode.dev/github/marwanzayed-coder/quran)
 
 ## Preview
 
@@ -13,7 +13,7 @@ NOUR requires [Node.js](https://nodejs.org/en/) to run.
 Install the dependencies using *Node.js*.
 
 ```sh
-npm install
+npm i
 nodemon app
 ```
 
