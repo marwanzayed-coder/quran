@@ -1,0 +1,197 @@
+:root {
+  --main-color: #1d2239;
+  --main-bg-color: #292e48;
+  --main-text-color: #23a96e;
+  --color-ddd: #ddd;
+  --color-white: #fff;
+}
+.text-ddd {
+  color: var(--color-ddd);
+}
+.text-ddd:hover {
+  color: var(--color-white);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="border"] {
+  border-color: var(--main-bg-color) !important;
+}
+body {
+  font-family: "Changa", sans-serif;
+  background-color: var(--main-color);
+  color: var(--color-white);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-text-color);
+}
+/* iconmoon */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?hm7g0k");
+  src: url("../fonts/icomoon.eot?hm7g0k#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?hm7g0k") format("truetype"),
+    url("../fonts/icomoon.woff?hm7g0k") format("woff"),
+    url("../fonts/icomoon.svg?hm7g0k#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* iconmoon */
+/* Quran */
+@font-face {
+  font-family: "Quran Reguler";
+  src: url("../fonts/QuranRegular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Quran */
+/* Start Header */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-brand {
+  color: var(--main-text-color);
+  font-size: 24px;
+}
+.navbar .navbar-brand:hover {
+  color: var(--main-text-color);
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .navbar-collapse .nav-item .nav-link {
+  color: var(--color-ddd);
+}
+.navbar .navbar-collapse .nav-item .nav-link:hover {
+  color: var(--color-white);
+}
+/* End Header */
+/* ------------------- */
+.page-not-found {
+  height: calc(100vh - (89px + 321px));
+}
+/* ------------------- */
+/* ------------------- */
+.home .title::before {
+  content: "\e900";
+  font-family: icomoon, monospace;
+  font-size: 60%;
+  margin-left: 10px;
+  color: var(--main-text-color);
+}
+.home .card[data-v-34acdfdc] {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+.home a {
+  color: inherit;
+  text-decoration: none;
+}
+.home .card.morning[data-v-34acdfdc] {
+  background-image: url(/images/morning.svg);
+}
+.home .card.evening[data-v-34acdfdc] {
+  background-image: url(/images/evening.svg);
+}
+.home .card .card-title[data-v-34acdfdc] {
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+.home .row-quran a.card {
+  background-color: var(--main-text-color);
+}
+.home .row-quran a {
+  color: var(--color-white);
+}
+.home .ayah {
+  font-family: "Quran Reguler", serif;
+  padding: 20px;
+  line-height: 50px;
+  word-spacing: 3px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+}
+/* ------------------- */
+/*---------------------------------*/
+.quran .row .item {
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  min-width: 250px;
+  padding: 10px;
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.quran .row .item h2 {
+  color: var(--main-text-color);
+}
+
+/*---------------------------------*/
+
+/*----------------------------------------*/
+.sora {
+  font-family: "Quran Reguler", serif;
+}
+.sora h1 {
+  color: var(--main-text-color);
+}
+.sora .h3 {
+  background-color: var(--main-bg-color);
+  padding: 40px;
+  line-height: 3;
+  word-spacing: 3px;
+  border-radius: 10px;
+}
+/*----------------------------------------*/
+/*-------------------------------------------------------*/
+.morning .text {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+.morning .text h1 {
+  color: var(--main-text-color);
+}
+.morning .item {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+
+  margin: 10px 0;
+}
+.morning .item p.zekr {
+  font-size: 1.5rem;
+  line-height: 2;
+  font-family: "Quran Reguler", serif;
+  word-spacing: 3px;
+}
+
+.morning .item button {
+  color: var(--color-white);
+  border: 1px solid var(--main-text-color);
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+}
+.morning .item button.done {
+  cursor: auto;
+  opacity: 0.5;
+}
+/*-------------------------------------------------------*/

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body dir="rtl">
+    <%- include('./partials/header') %>
+    <section class="home">
+      <div class="container">
+        <h1 class="text-center mt-5 p-3">أهلا بك فى موقع القرأن الكريم</h1>
+
+        <p class="title h3 mb-1 mt-5">القرأن الكريم</p>
+        <p class="text-muted" id="surahName"></p>
+        <p
+          class="h3 ayah text-center p-3 border ayah-container"
+          id="ayah"
+          data-v-637fbfae
+        ></p>
+
+        <p class="title h3 mb-1">الأذكار</p>
+        <p class="text-muted">عطر لسانك بذكر الله</p>
+        <div class="row" data-v-34acdfdc="">
+          <div class="col-12 mb-3 col-lg-6" data-v-34acdfdc="">
+            <a
+              href="/citationForMorning"
+              class="card p-2 morning"
+              data-v-34acdfdc=""
+              ><div class="card-body ms-auto" data-v-34acdfdc="">
+                <p class="card-title h3" data-v-34acdfdc="">أذكار الصباح</p>
+              </div></a
+            >
+          </div>
+          <div class="col-12 mb-3 col-lg-6" data-v-34acdfdc="">
+            <a
+              href="/eveningPrayers"
+              class="card p-2 evening"
+              data-v-34acdfdc=""
+              ><div class="card-body ms-auto" data-v-34acdfdc="">
+                <p class="card-title h3" data-v-34acdfdc="">أذكار المساء</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./partials/footer') %>
+    <script src="/js/quran.js"></script>
+  </body>
+</html>
