@@ -1,10 +1,10 @@
-AzkarFile();
-function AzkarFile() {
+AzkarFilerowEvening();
+function AzkarFilerowEvening() {
   fetch("../azkar.json")
     .then((res) => res.json())
     .then((rep) => {
-      for (let i = 0; i <= 30; i++) {
-        let row = document.getElementById("row");
+      for (let i = 31; i <= 60; i++) {
+        let rowEvening = document.getElementById("row-evening");
         let div = document.createElement("div");
         div.className = "item";
 
@@ -27,7 +27,7 @@ function AzkarFile() {
         let btnCountText = document.createTextNode(
           rep[i].count.toLocaleString("AR-EG")
         );
-        let btnText = document.createTextNode("التكرارات المتبقية: ");
+        let btnText = document.createTextNode("التكرارات المتبقية:");
         btnCountSpan.appendChild(btnCountText);
         btn.appendChild(btnText);
         btn.appendChild(btnCountSpan);
@@ -36,7 +36,7 @@ function AzkarFile() {
           if (btnCountSpan.innerText != 0) {
             btnCountSpan.innerText--;
           } else {
-            btn.className = "done";
+            btn.classList.add("done");
           }
         };
 
@@ -50,7 +50,7 @@ function AzkarFile() {
         div.appendChild(text);
         div.appendChild(btn);
         div.appendChild(reference);
-        row.appendChild(div);
+        rowEvening.appendChild(div);
       }
     });
 }

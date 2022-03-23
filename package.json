@@ -8,12 +8,12 @@
     "router": "^1.3.6"
   },
   "name": "Quran",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "app.js",
   "author": "marwan",
   "license": "ISC",
   "description": "",
   "engines": {
-    "node": "13.14.0"
+    "node": "16.14.2"
   }
 }
