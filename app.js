@@ -36,7 +36,7 @@ app.get("/roqia", (req, res) => {
 app.use((req, res) => {
   res.status(404).render("page-not-found", { myTitle: "الصفحه غير موجوده" });
 });
-// https://muslimsnour.live/azkar/evening
+
 app.listen(process.env.PORT || port, () => {
   console.log(`http://localhost:${port}`);
 });
