@@ -1,6 +1,7 @@
 # Quran Karem
 
 [Open in Visual Studio Code](https://vscode.dev/github/marwanzayed-coder/quran)
+[Open In Notion](https://marwanzayed.notion.site/Quran-c2806de5c4a54004a956328d29f3a68f)
 
 ## Preview
 
