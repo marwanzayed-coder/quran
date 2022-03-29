@@ -21,6 +21,8 @@ nodemon app
 
 - Display 1 Ayah on every visit to Home Page.
 - User can read 4 Types of Azkar (Morning, Evening, Roqia, Other Supplications).
+- Using the site without the Internet.
+- The site has a progressive web app (PWA) feature, or now you can download the site as a shortcut on the home screen on your phone, computer or laptop, and you can open it without the Internet
 
 ## Tech Stack
 
