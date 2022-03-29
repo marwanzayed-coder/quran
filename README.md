@@ -35,10 +35,11 @@ nodemon app
 - There is an extension for the Google browser that you can add in this way
 1. Enter [Here](https://github.com/marwanzayed-coder/quran-extension)
 2. Then click on code and then Download ZIP
-3. Then go to the settings of your browser, then choose Extensions
-4. Activate Developer mode
-5. Then click on Load unpacked
-6. Then choose the folder you downloaded
+3. Then decompress the file
+4. Then go to the settings of your browser, then choose Extensions
+5. Activate Developer mode
+6. Then click on Load unpacked
+7. Then choose the folder you downloaded
 
 ## Tech Stack
 
