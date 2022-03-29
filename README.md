@@ -32,6 +32,13 @@ nodemon app
 - User can read 4 Types of Azkar (Morning, Evening, Roqia, Other Supplications).
 - Using the site without the Internet.
 - The site has a progressive web app (PWA) feature, or now you can download the site as a shortcut on the home screen on your phone, computer or laptop, and you can open it without the Internet
+- There is an extension for the Google browser that you can add in this way
+1. Enter [Here](https://github.com/marwanzayed-coder/quran-extension)
+2. Then click on code and then Download ZIP
+3. Then go to the settings of your browser, then choose Extensions
+4. Activate Developer mode
+5. Then click on Load unpacked
+6. Then choose the folder you downloaded
 
 ## Tech Stack
 
