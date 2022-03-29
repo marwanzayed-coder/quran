@@ -1,4 +1,4 @@
-const cacheName = "Quran-v2";
+const cacheName = "Quran-v3";
 const assets = [
   "/",
   "/css/bootstrap.rtl.min.css",
@@ -8,6 +8,13 @@ const assets = [
   "/js/all.min.js",
   "/js/bootstrap.bundle.min.js",
   "/js/main.js",
+  "/js/quran.js",
+  "/js/sora.js",
+  "/js/azkar.js",
+  "/js/AzkarFileRoqia.js",
+  "/js/AzkarFilerowEvening.js",
+  "/js/AzkarFilerowOther.js",
+  "/azkar.json",
   "/quran.json",
   "/images/morning.svg",
   "/images/evening.svg",

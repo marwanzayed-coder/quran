@@ -14,8 +14,17 @@ Install the dependencies using *Node.js*.
 
 ```sh
 npm i
+node app
+```
+
+### Or
+
+```sh
+npm i
+npm i -g nodemon
 nodemon app
 ```
+
 
 ## Features
 
