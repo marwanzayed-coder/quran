@@ -1,0 +1,33 @@
+{
+  "theme_color": "#1d2239",
+  "background_color": "#1d2239",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "name": "\u0627\u0644\u0642\u0631\u0623\u0646 \u0627\u0644\u0643\u0631\u064a\u0645",
+  "short_name": "Quran",
+  "description": ".\u0645\u0648\u0642\u0639 \u0627\u0644\u0642\u0631\u0623\u0646 \u0627\u0644\u0643\u0631\u064a\u0645 - \u0645\u0648\u0642\u0639 \u0627\u0633\u0644\u0627\u0645\u0649 \u064a\u0633\u0627\u0639\u062f \u0627\u0644\u0646\u0627\u0633 \u0639\u0644\u0649 \u0642\u0631\u0627\u0621\u0629 \u0627\u0644\u0642\u0631\u0623\u0646 \u0627\u0644\u0643\u0631\u064a\u0645 \u0648 \u0627\u0644\u0627\u0630\u0643\u0627\u0631(\u0627\u0630\u0643\u0627\u0631 \u0627\u0644\u0645\u0633\u0627\u0621 \u0648 \u0627\u0644\u0635\u0628\u0627\u062d \u0648 \u0627\u0644\u0631\u0642\u064a\u0629 \u0627\u0644\u0634\u0631\u0639\u064a\u0629 \u0648 \u0627\u0630\u0643\u0627\u0631 \u0627\u062e\u0631\u0649)",
+  "icons": [
+    {
+      "src": "./images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

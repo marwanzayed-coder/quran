@@ -5,6 +5,9 @@
   --color-ddd: #ddd;
   --color-white: #fff;
 }
+html {
+  overflow-x: hidden;
+}
 .text-ddd {
   color: var(--color-ddd);
 }

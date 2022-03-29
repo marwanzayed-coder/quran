@@ -35,3 +35,14 @@ if (window.localStorage.getItem("modo") == "light") {
   html[0].style.cssText =
     "--main-color: #1d2239;--main-bg-color: #292e48;--color-ddd: #ddd;--color-white: #fff;";
 }
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker
+    .register("../sw.js")
+    .then((req) => {
+      console.log("File Register", req);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
