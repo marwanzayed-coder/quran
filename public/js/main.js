@@ -39,9 +39,7 @@ if (window.localStorage.getItem("modo") == "light") {
 if (navigator.serviceWorker) {
   navigator.serviceWorker
     .register("../sw.js")
-    .then((req) => {
-      console.log("File Register", req);
-    })
+    .then((req) => {})
     .catch((err) => {
       console.log(err);
     });

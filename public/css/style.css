@@ -40,6 +40,16 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--main-text-color);
 }
+.card {
+  background-color: var(--main-bg-color);
+}
+.title::before {
+  content: "\e900";
+  font-family: icomoon, monospace;
+  font-size: 60%;
+  margin-left: 10px;
+  color: var(--main-text-color);
+}
 /* iconmoon */
 @font-face {
   font-family: "icomoon";
@@ -128,6 +138,13 @@ body {
   background-color: var(--main-bg-color);
   border-radius: 10px;
 }
+.home .row .item {
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
 /* ------------------- */
 /*---------------------------------*/
 .quran .row .item {
@@ -198,3 +215,24 @@ body {
   opacity: 0.5;
 }
 /*-------------------------------------------------------*/
+/************************************/
+.setting h1 {
+  color: var(--main-text-color);
+}
+.setting select,
+.setting input {
+  background-color: var(--main-color);
+  color: var(--color-ddd);
+}
+.setting input:focus {
+  background-color: var(--main-color);
+  color: var(--color-ddd);
+}
+.setting button {
+  background-color: var(--main-bg-color);
+  color: var(--color-white);
+  border: 1px solid #404762;
+  font-size: 0.75rem;
+  padding: 0.625rem 1.5rem 0.5rem;
+}
+/************************************/

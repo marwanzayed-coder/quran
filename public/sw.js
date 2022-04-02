@@ -1,4 +1,4 @@
-const cacheName = "Quran-v9";
+const cacheName = "Quran-v8";
 const assets = [
   "/",
   "/citationForMorning",
@@ -6,7 +6,7 @@ const assets = [
   "/otherRemembrancesAndOtherSupplications",
   "/roqia",
   "/quran",
-  "/quran/:id"
+  "/quran/:id",
   "/css/bootstrap.rtl.min.css",
   "/css/style.css",
   "/css/all.min.css",
@@ -28,7 +28,7 @@ const assets = [
   "https://fonts.gstatic.com/s/changa/v17/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xcjLj9ytf.woff2",
   "https://fonts.gstatic.com/s/changa/v17/2-c79JNi2YuVOUcOarRPgnNGooxCZ62xcjfj9w.woff2",
   "https://fonts.googleapis.com/css2?family=Changa&display=swap",
-  "/fonts/icomoon.ttf?hm7g0k"
+  "/fonts/icomoon.ttf?hm7g0k",
 ];
 self.addEventListener("install", (installEvent) => {
   installEvent.waitUntil(
@@ -64,7 +64,6 @@ self.addEventListener("activate", (activateEvent) => {
   );
 });
 self.addEventListener("fetch", (fetchEvent) => {
-  console.log("fetch", fetchEvent);
   fetchEvent.respondWith(
     caches
       .match(fetchEvent.request)

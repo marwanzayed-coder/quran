@@ -2,14 +2,23 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const helmet = require("helmet");
+const cors = require("cors");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(helmet());
+// app.use(helmet());
+app.use(cors());
+
+let city = "cairo";
+
+var corsOptions = {
+  origin: `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=United%20Arab%20Emirates&method=8`,
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
 // For Public File
-app.get("/", (req, res) => {
+app.get("/", cors(corsOptions), (req, res) => {
   res.render("index", { myTitle: "القرأن الكريم" });
 });
 app.get("/quran", (req, res) => {
@@ -31,6 +40,9 @@ app.get("/otherRemembrancesAndOtherSupplications", (req, res) => {
 });
 app.get("/roqia", (req, res) => {
   res.render("roqia", { myTitle: "الرقيه الشرعية | القرأن الكريم" });
+});
+app.get("/settings", (req, res) => {
+  res.render("settings", { myTitle: " الإعدادات | القرأن الكريم" });
 });
 // 404 Page Not Found
 app.use((req, res) => {
