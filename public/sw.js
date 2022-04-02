@@ -1,4 +1,4 @@
-const cacheName = "Quran-v8";
+const cacheName = "Quran-v10";
 const assets = [
   "/",
   "/citationForMorning",

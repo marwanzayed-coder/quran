@@ -32,7 +32,7 @@ let city = window.localStorage.getItem("city") || "cairo";
 let country = window.localStorage.getItem("country") || "egypt";
 function PrayerTimesAPI() {
   fetch(
-    `http://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`
+    `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`
   )
     .then((res) => res.json())
     .then((rep) => {
