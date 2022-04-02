@@ -37,7 +37,6 @@ function PrayerTimesAPI() {
     .then((res) => res.json())
     .then((rep) => {
       let prayerTimes = document.getElementById("prayerTimes");
-      console.log(rep.data.timings);
       prayerTimes.innerHTML = `${rep.data.date.hijri.weekday.ar}, ${
         rep.data.date.hijri.day
       } من شهر ${
