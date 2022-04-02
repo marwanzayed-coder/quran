@@ -2,14 +2,21 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const helmet = require("helmet");
+const cors = require("cors");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
+app.use(cors());
 app.use(helmet());
 
+var corsOptions = {
+  origin: "https://api.aladhan.com",
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 // For Public File
-app.get("/", (req, res) => {
+app.get("/", cors(corsOptions), (req, res) => {
   res.render("index", { myTitle: "القرأن الكريم" });
 });
 app.get("/quran", (req, res) => {

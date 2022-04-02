@@ -30,10 +30,10 @@ function homePage() {
 
 let city = window.localStorage.getItem("city") || "cairo";
 let country = window.localStorage.getItem("country") || "egypt";
+let url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`;
+
 function PrayerTimesAPI() {
-  fetch(
-    `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`
-  )
+  fetch(url)
     .then((res) => res.json())
     .then((rep) => {
       let prayerTimes = document.getElementById("prayerTimes");
