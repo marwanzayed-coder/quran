@@ -42,6 +42,7 @@ nodemon app
 5. Activate Developer mode
 6. Then click on Load unpacked
 7. Then choose the folder you downloaded
+- Display Prayer Times for a specified location.
 
 ## Tech Stack
 
@@ -56,7 +57,7 @@ nodemon app
 - Have a new idea? Contact me at [Portfolio](https://marwanzayed-coder.github.io/portfolio/)
 
 ## Resources
-
+- [PrayerTimes API](https://aladhan.com/prayer-times-api)
 - [Azkar](https://github.com/osamayy/azkar-db)
 - [Quran API](https://quranweb.herokuapp.com/quran.json)
 
