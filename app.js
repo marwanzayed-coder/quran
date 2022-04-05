@@ -34,9 +34,9 @@ app.get("/otherRemembrancesAndOtherSupplications", (req, res) => {
 app.get("/roqia", (req, res) => {
   res.render("roqia", { myTitle: "الرقيه الشرعية | القرأن الكريم" });
 });
-app.get("/settings", (req, res) => {
-  res.render("settings", { myTitle: " الإعدادات | القرأن الكريم" });
-});
+// app.get("/settings", (req, res) => {
+//   res.render("settings", { myTitle: " الإعدادات | القرأن الكريم" });
+// });
 // 404 Page Not Found
 app.use((req, res) => {
   res.status(404).render("page-not-found", { myTitle: "الصفحه غير موجوده" });
