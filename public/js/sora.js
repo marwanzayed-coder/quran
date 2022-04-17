@@ -5,7 +5,7 @@ function SoraFile() {
     .then((rep) => {
       // let num = location.href.slice(37); // 28
       let num;
-      if (location.href.startsWith("http://localhost:3000/")) {
+      if (location.href.startsWith("http://localhost")) {
         num = location.href.slice(28);
       } else {
         num = location.href.slice(37);
