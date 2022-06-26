@@ -28,42 +28,42 @@ function homePage() {
     });
 }
 
-let city = window.localStorage.getItem("city") || "cairo";
-let country = window.localStorage.getItem("country") || "egypt";
-let url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`;
+// let city = window.localStorage.getItem("city") || "cairo";
+// let country = window.localStorage.getItem("country") || "egypt";
+// let url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}`;
 
-function PrayerTimesAPI() {
-  fetch(url)
-    .then((res) => res.json())
-    .then((rep) => {
-      let prayerTimes = document.getElementById("prayerTimes");
-      prayerTimes.innerHTML = `${rep.data.date.hijri.weekday.ar}, ${
-        rep.data.date.hijri.day
-      } من شهر ${
-        rep.data.date.hijri.month.ar
-      } لعام ${rep.data.date.hijri.year.toLocaleString("AR-EG")} هجريًا.`;
+// function PrayerTimesAPI() {
+//   fetch(url)
+//     .then((res) => res.json())
+//     .then((rep) => {
+//       let prayerTimes = document.getElementById("prayerTimes");
+//       prayerTimes.innerHTML = `${rep.data.date.hijri.weekday.ar}, ${
+//         rep.data.date.hijri.day
+//       } من شهر ${
+//         rep.data.date.hijri.month.ar
+//       } لعام ${rep.data.date.hijri.year.toLocaleString("AR-EG")} هجريًا.`;
 
-      let timings = rep.data.timings;
+//       let timings = rep.data.timings;
 
-      let colFajr = document.getElementById("fajr");
-      colFajr.innerHTML = tConvert(timings.Fajr);
+//       let colFajr = document.getElementById("fajr");
+//       colFajr.innerHTML = tConvert(timings.Fajr);
 
-      let colSunrise = document.getElementById("sunrise");
-      colSunrise.innerHTML = tConvert(timings.Sunrise);
+//       let colSunrise = document.getElementById("sunrise");
+//       colSunrise.innerHTML = tConvert(timings.Sunrise);
 
-      let colDhuhr = document.getElementById("dhuhr");
-      colDhuhr.innerHTML = tConvert(timings.Dhuhr);
+//       let colDhuhr = document.getElementById("dhuhr");
+//       colDhuhr.innerHTML = tConvert(timings.Dhuhr);
 
-      let colAsr = document.getElementById("asr");
-      colAsr.innerHTML = tConvert(timings.Asr);
+//       let colAsr = document.getElementById("asr");
+//       colAsr.innerHTML = tConvert(timings.Asr);
 
-      let colMaghrib = document.getElementById("maghrib");
-      colMaghrib.innerHTML = tConvert(timings.Maghrib);
+//       let colMaghrib = document.getElementById("maghrib");
+//       colMaghrib.innerHTML = tConvert(timings.Maghrib);
 
-      let colIsha = document.getElementById("isha");
-      colIsha.innerHTML = tConvert(timings.Isha);
-    });
-}
+//       let colIsha = document.getElementById("isha");
+//       colIsha.innerHTML = tConvert(timings.Isha);
+//     });
+// }
 function tConvert(time) {
   // Check correct time format and split into components
   time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [
@@ -78,4 +78,4 @@ function tConvert(time) {
   }
   return time.join(""); // return adjusted time or original string
 }
-PrayerTimesAPI();
+// PrayerTimesAPI();

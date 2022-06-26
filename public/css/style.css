@@ -1,9 +1,9 @@
 :root {
-  --main-color: #1d2239;
-  --main-bg-color: #292e48;
+  --main-color: #ececec;
+  --main-bg-color: #fff;
   --main-text-color: #23a96e;
-  --color-ddd: #ddd;
-  --color-white: #fff;
+  --color-ddd: #111;
+  --color-white: #000;
 }
 html {
   overflow-x: hidden;
@@ -86,16 +86,16 @@ body {
 .navbar .navbar-collapse .nav-item .nav-link {
   color: var(--color-ddd);
 }
-.navbar .navbar-collapse .nav-item .nav-link:hover {
+/*.navbar .navbar-collapse .nav-item .nav-link:hover {
   color: var(--color-white);
-}
-.navbar .dropdown-menu {
+}*/
+/*.navbar .dropdown-menu {
   background-color: var(--main-bg-color);
   color: #fff;
-}
-.navbar .dropdown-item {
+}*/
+/*.navbar .dropdown-item {
   color: #fff;
-}
+}*/
 .navbar .dropdown-item:focus,
 .navbar .dropdown-item:hover {
   background-color: var(--main-color);

@@ -20,13 +20,13 @@ app.get("/quran", (req, res) => {
 app.get(`/quran/:id`, (req, res) => {
   res.render("sora", { myTitle: "القرأن الكريم" });
 });
-app.get("/citationForMorning", (req, res) => {
+app.get("/morning", (req, res) => {
   res.render("citationForMorning", { myTitle: "اذكار الصباح | القرأن الكريم" });
 });
-app.get("/eveningPrayers", (req, res) => {
+app.get("/evening", (req, res) => {
   res.render("eveningPrayers", { myTitle: "اذكار المساء | القرأن الكريم" });
 });
-app.get("/otherRemembrancesAndOtherSupplications", (req, res) => {
+app.get("/other", (req, res) => {
   res.render("otherRemembrancesAndOtherSupplications", {
     myTitle: "القرأن الكريم",
   });
